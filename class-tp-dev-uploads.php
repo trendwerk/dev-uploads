@@ -18,12 +18,13 @@ class TP_Dev_Uploads {
 	function placehold( $rules ) {
 		if( 'develop' == TP_ENV || 'release' == TP_ENV ) {
 			$tp_images_rules = array(
-				'#BEGIN TrendPress placeholder images',
+				'',
+				'# BEGIN TP Development uploads',
 				'RewriteCond %{REQUEST_FILENAME} !-f',
 				'RewriteRule ^wp-content/uploads/(.*)-([0-9]+)x([0-9]+).(gif|jpe?g|png|bmp)$ http://placehold.it/$2x$3 [NC,L]',
 				'RewriteCond %{REQUEST_FILENAME} !-f',
 				'RewriteRule ^wp-content/uploads/(.*)(gif|jpe?g|png|bmp)$ http://placehold.it/600x600 [NC,L]',
-				'#END TrendPress placeholder images',
+				'# END TP Development uploads',
 				'',
 			);
 
