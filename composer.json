@@ -1,5 +1,6 @@
 {
 	"name": "trendwerk/dev-uploads",
+	"type": "wordpress-muplugin",
 	"description": "Placeholder images for development and staging environments. Made for WordPress.",
 	"require": {
 		"php": ">=5.4"
