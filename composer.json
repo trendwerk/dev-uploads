@@ -1,0 +1,7 @@
+{
+	"name": "trendwerk/dev-uploads",
+	"description": "Placeholder images for development and staging environments. Made for WordPress.",
+	"require": {
+		"php": ">=5.4",
+    }
+}
