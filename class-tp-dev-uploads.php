@@ -2,6 +2,13 @@
 /**
  * Plugin Name: Development uploads
  * Description: Placeholder images for development and staging environments.
+ *
+ * Plugin URI: https://github.com/trendwerk/dev-uploads
+ * 
+ * Author: Ontwerpstudio Trendwerk
+ * Author URI: https://github.com/trendwerk
+ * 
+ * Version: 1.0.0
  */
 
 class TP_Dev_Uploads {
