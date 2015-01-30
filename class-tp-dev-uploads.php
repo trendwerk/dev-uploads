@@ -8,12 +8,14 @@
  * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
  * 
- * Version: 1.0.0
+ * Version: 1.0.1
  */
 
 class TP_Dev_Uploads {
+
 	function __construct() {
-		add_filter( 'mod_rewrite_rules', array( $this, 'placehold' ) );
+		if( defined( 'WP_ENV' ) )
+			add_filter( 'mod_rewrite_rules', array( $this, 'placehold' ) );
 	}
 
 	/**
@@ -23,7 +25,7 @@ class TP_Dev_Uploads {
 	 * @return string        New rules
 	 */
 	function placehold( $rules ) {
-		if( 'develop' == TP_ENV || 'release' == TP_ENV ) {
+		if( 'development' == WP_ENV || 'staging' == WP_ENV ) {
 			$tp_images_rules = array(
 				'',
 				'# BEGIN TP Development uploads',
@@ -42,4 +44,5 @@ class TP_Dev_Uploads {
 
 		return $rules;
 	}
+	
 } new TP_Dev_Uploads;
