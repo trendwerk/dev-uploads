@@ -5,7 +5,7 @@
  *
  * Plugin URI: https://github.com/trendwerk/dev-uploads
  * 
- * Author: Ontwerpstudio Trendwerk
+ * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
  * 
  * Version: 1.0.0
