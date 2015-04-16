@@ -34,9 +34,9 @@ class TP_Dev_Uploads {
 				'',
 				'# BEGIN TP Development uploads',
 				'RewriteCond %{REQUEST_FILENAME} !-f',
-				'RewriteRule ^' . $uploads_rel_path . '/(.*)-([0-9]+)x([0-9]+).(gif|jpe?g|png|bmp)$ http://placehold.it/$2x$3 [NC,L]',
+				'RewriteRule ^' . $uploads_rel_path . '/(.*)-([0-9]+)x([0-9]+).(gif|jpe?g|png|bmp)$ http://www.placehold.it/$2x$3 [NC,L]',
 				'RewriteCond %{REQUEST_FILENAME} !-f',
-				'RewriteRule ^' . $uploads_rel_path . '/(.*)(gif|jpe?g|png|bmp)$ http://placehold.it/600x600 [NC,L]',
+				'RewriteRule ^' . $uploads_rel_path . '/(.*)(gif|jpe?g|png|bmp)$ http://www.placehold.it/600x600 [NC,L]',
 				'# END TP Development uploads',
 				'',
 			);
