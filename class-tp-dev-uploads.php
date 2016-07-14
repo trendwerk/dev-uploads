@@ -4,11 +4,11 @@
  * Description: Placeholder images for development and staging environments.
  *
  * Plugin URI: https://github.com/trendwerk/dev-uploads
- * 
+ *
  * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
- * 
- * Version: 1.0.3
+ *
+ * Version: 1.0.4
  */
 
 class TP_Dev_Uploads {
@@ -20,7 +20,7 @@ class TP_Dev_Uploads {
 
 	/**
 	 * Redirect images from uploads to placehold.it on develop and release environments if they don't exist
-	 * 
+	 *
 	 * @param  string $rules WordPress' own rules
 	 * @return string        New rules
 	 */
@@ -48,5 +48,5 @@ class TP_Dev_Uploads {
 
 		return $rules;
 	}
-	
+
 } new TP_Dev_Uploads;
