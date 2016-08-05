@@ -8,7 +8,7 @@
  * Author: Trendwerk
  * Author URI: https://github.com/trendwerk
  *
- * Version: 1.0.4
+ * Version: 1.0.5
  */
 
 class TP_Dev_Uploads {
